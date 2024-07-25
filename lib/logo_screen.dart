@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-// Assuming OnboardingScreen1 is the next screen to navigate to
+// Assuming OnboardingScreen1 is the next screen to navigate tohhhhhhh
 import 'onboarding_screen1.dart';
 
 class LogoScreen extends StatefulWidget {
