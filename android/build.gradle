@@ -1,0 +1,42 @@
+// allprojects {
+// repositories {
+//     google()
+//     jcenter()
+// }
+// }
+
+// rootProject.buildDir = '../build'
+// subprojects {
+//     project.buildDir = "${rootProject.buildDir}/${project.name}"
+// }
+// subprojects {
+//     project.evaluationDependsOn(':app')
+// }
+
+// tasks.register("clean", Delete) {
+//     delete rootProject.buildDir
+// }
+
+
+
+
+// Top-level build.gradle file
+
+buildscript {
+    repositories {
+        google() // Required for Google services
+        mavenCentral() // Recommended as JCenter is deprecated
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:8.0.0" // Use the latest stable version
+        classpath "com.google.gms:google-services:4.3.15" // Ensure this matches your project needs
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral() // Recommended over jcenter()
+    }
+}
+
